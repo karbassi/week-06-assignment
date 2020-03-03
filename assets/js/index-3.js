@@ -18,20 +18,33 @@ const divideB = document.querySelector("#divide-b");
 const divideSolve = document.querySelector("#divide-solve");
 const divideResult = document.querySelector("#divide-result");
 
+
 function add() {
-    addResult.value = addA.valueAsNumber + addB.valueAsNumber;
+    const a = parseInt(addA.value, 10);
+    const b = parseInt(addB.value, 10);
+
+    addResult.value = a + b;
 }
 
 function subtract() {
-    subtractResult.value = subtractA.valueAsNumber - subtractB.valueAsNumber;
+    const a = parseInt(subtractA.value, 10);
+    const b = parseInt(subtractB.value, 10);
+
+    subtractResult.value = a - b;
 }
 
 function multiply() {
-    multiplyResult.value = multiplyA.valueAsNumber * multiplyB.valueAsNumber;
+    const a = parseInt(multiplyA.value, 10);
+    const b = parseInt(multiplyB.value, 10);
+
+    multiplyResult.value = a * b;
 }
 
 function divide() {
-    divideResult.value = divideA.valueAsNumber / divideB.valueAsNumber;
+    const a = parseInt(divideA.value, 10);
+    const b = parseInt(divideB.value, 10);
+
+    divideResult.value = a / b;
 }
 
 addSolve.addEventListener("click", add);
